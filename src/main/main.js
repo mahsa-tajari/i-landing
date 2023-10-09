@@ -3,6 +3,7 @@ import Companies from '../companies/companies'
 import BodyItem from '../bodyItem/bodyItem'
 import ServicesBox from '../servicesBox/servicesBox'
 import Title from '../title/title'
+import Cart from '../cart/cart'
 function Main() {
     return(
     <main>
@@ -25,6 +26,11 @@ function Main() {
         </section>
         <section className='plans'>
             <Title title="پلن‌های ما"></Title>
+            <div className='plans-wrapper'>
+                <Cart planName="ساده" price="99" yearlyPrice="1 میلیون " liValue="اول" style="normal"></Cart>
+                <Cart planName="حرفه‌ای" price="199" yearlyPrice="2 میلیون " style="active"></Cart>
+                <Cart planName="نامحدود" price="399" yearlyPrice="4 میلیون " style="normal"></Cart>
+            </div>
         </section>
     </main>
     )
