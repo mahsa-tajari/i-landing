@@ -5,31 +5,49 @@ import ServicesBox from '../servicesBox/servicesBox'
 import Title from '../title/title'
 import Cart from '../cart/cart'
 function Main() {
+    const bodyItemDta = [
+        {shortTitle: 'طراحی Mobile-first',imgSrc: './picture1.svg', direction: 'right', theme: 'default',title: 'ریسپانسیو برای تمامی دستگاه ها'},
+        {shortTitle: 'آناتومیِ استاندارد',imgSrc:'./picture2.svg',direction:'left', theme: 'blue-theme', title: 'طراحی و توسعه با رعایت اصول جهانی'},
+        {shortTitle: 'رشد کسب و کار',imgSrc:'./picture3.svg',direction:'right', theme: 'default', title: 'تبدیل بازدید کننده ساده به مشتری!'},
+    ]
+    const servicesBoxData =[
+        {title: "سئو فرندلی", iconSrc: "./searchIcon.svg"},
+        {title: "طراحی ریسپانسیو",iconSrc: "./cadrIcon.svg"},
+        {title: "سرعت بالا در لودینگ", iconSrc: "./speedIcon.svg"},
+        {title:"کدنویسی تمیز و بهینه" ,iconSrc:"./codeIcon.svg"},
+        {title:"جذب مشتری بالقوه", iconSrc:"./customerIcon.svg"},
+        {title: "افزایش نرخ تبدیل", iconSrc: "./arrowIcon.svg"}
+    ]
+    const cartData = [
+        {planName: "ساده", price: "99", yearlyPrice: "1 میلیون ", liValue: "اول", style: "normal"},
+        {planName: "حرفه‌ای", price: "199", yearlyPrice: "2 میلیون ", style: "active"},
+        {planName: "نامحدود",  price: "399",  yearlyPrice: "4 میلیون ",  style: "normal"}
+    ]
     return(
     <main>
         <Companies></Companies>
         <div className='body-wrapper'>
-            <BodyItem shortTitle="طراحی Mobile-first" imgSrc="./picture1.svg" direction="right" theme="default" title="ریسپانسیو برای تمامی دستگاه ها"></BodyItem>
-            <BodyItem shortTitle="آناتومیِ استاندارد" imgSrc="./picture2.svg" direction="left" theme="blue-theme" title="طراحی و توسعه با رعایت اصول جهانی"></BodyItem>
-            <BodyItem shortTitle="رشد کسب و کار" imgSrc="./picture3.svg" direction="right" theme="default" title="تبدیل بازدید کننده ساده به مشتری!"></BodyItem>
+            <BodyItem {...bodyItemDta[0]}></BodyItem>
+            <BodyItem {...bodyItemDta[1]}></BodyItem>
+            <BodyItem {...bodyItemDta[2]}></BodyItem>
         </div>
         <section className='our-services'>
             <Title title="امکانات ما"></Title>
             <div className='services-boxes-wrapper'>
-                <ServicesBox title="سئو فرندلی" iconSrc="./searchIcon.svg"></ServicesBox>
-                <ServicesBox title="طراحی ریسپانسیو" iconSrc="./cadrIcon.svg"></ServicesBox>
-                <ServicesBox title="سرعت بالا در لودینگ" iconSrc="./speedIcon.svg"></ServicesBox>
-                <ServicesBox title="کدنویسی تمیز و بهینه" iconSrc="./codeIcon.svg"></ServicesBox>
-                <ServicesBox title="جذب مشتری بالقوه" iconSrc="./customerIcon.svg"></ServicesBox>
-                <ServicesBox title="افزایش نرخ تبدیل" iconSrc="./arrowIcon.svg"></ServicesBox>
+                <ServicesBox {...servicesBoxData[0]}></ServicesBox>
+                <ServicesBox {...servicesBoxData[1]}></ServicesBox>
+                <ServicesBox {...servicesBoxData[2]}></ServicesBox>
+                <ServicesBox {...servicesBoxData[3]}></ServicesBox>
+                <ServicesBox {...servicesBoxData[4]}></ServicesBox>
+                <ServicesBox {...servicesBoxData[5]}></ServicesBox>
             </div>
         </section>
         <section className='plans'>
             <Title title="پلن‌های ما"></Title>
             <div className='plans-wrapper'>
-                <Cart planName="ساده" price="99" yearlyPrice="1 میلیون " liValue="اول" style="normal"></Cart>
-                <Cart planName="حرفه‌ای" price="199" yearlyPrice="2 میلیون " style="active"></Cart>
-                <Cart planName="نامحدود" price="399" yearlyPrice="4 میلیون " style="normal"></Cart>
+                <Cart {...cartData[0]}></Cart>
+                <Cart {...cartData[1]}></Cart>
+                <Cart {...cartData[2]}></Cart>
             </div>
         </section>
     </main>
