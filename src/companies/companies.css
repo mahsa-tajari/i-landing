@@ -1,0 +1,42 @@
+#companies{
+    margin-top: 10rem;
+}
+#companies h2{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.companies-logos-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+
+}
+.companiy-logo-wrapper img {
+    width: 100%;
+}
+.companiy-logo-wrapper{
+    width: 2rem;
+}
+.companiy-logo-wrapper:first-child,
+.companiy-logo-wrapper:nth-child(2){
+    width: 3rem;
+}
+.companiy-logo-wrapper:nth-child(3){
+    width: 2.5rem;
+}
+@media (min-width:640px) {
+    .companies-logos-wrapper{
+        padding: 1rem 5rem;
+    }
+}
+@media (min-width:768px) {
+    .companies-logos-wrapper{
+        padding: 1rem 8rem;
+    }
+}
+@media (min-width:1024px) {
+    .companies-logos-wrapper{
+        justify-content: center;
+        column-gap: 8rem;
+    }
+}
