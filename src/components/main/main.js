@@ -6,17 +6,17 @@ import Title from '../title/title'
 import Cart from '../cart/cart'
 function Main() {
     const bodyItemDta = [
-        {shortTitle: 'طراحی Mobile-first',imgSrc: './picture1.svg', direction: 'right', theme: 'default',title: 'ریسپانسیو برای تمامی دستگاه ها'},
-        {shortTitle: 'آناتومیِ استاندارد',imgSrc:'./picture2.svg',direction:'left', theme: 'blue-theme', title: 'طراحی و توسعه با رعایت اصول جهانی'},
-        {shortTitle: 'رشد کسب و کار',imgSrc:'./picture3.svg',direction:'right', theme: 'default', title: 'تبدیل بازدید کننده ساده به مشتری!'},
+        {shortTitle: 'طراحی Mobile-first',imgSrc: './images/main/picture1.svg', direction: 'right', theme: 'default',title: 'ریسپانسیو برای تمامی دستگاه ها'},
+        {shortTitle: 'آناتومیِ استاندارد',imgSrc:'./images/main/picture2.svg',direction:'left', theme: 'blue-theme', title: 'طراحی و توسعه با رعایت اصول جهانی'},
+        {shortTitle: 'رشد کسب و کار',imgSrc:'./images/main/picture3.svg',direction:'right', theme: 'default', title: 'تبدیل بازدید کننده ساده به مشتری!'},
     ]
     const servicesBoxData =[
-        {title: "سئو فرندلی", iconSrc: "./searchIcon.svg"},
-        {title: "طراحی ریسپانسیو",iconSrc: "./cadrIcon.svg"},
-        {title: "سرعت بالا در لودینگ", iconSrc: "./speedIcon.svg"},
-        {title:"کدنویسی تمیز و بهینه" ,iconSrc:"./codeIcon.svg"},
-        {title:"جذب مشتری بالقوه", iconSrc:"./customerIcon.svg"},
-        {title: "افزایش نرخ تبدیل", iconSrc: "./arrowIcon.svg"}
+        {title: "سئو فرندلی", iconSrc: "./images/ourServices/searchIcon.svg"},
+        {title: "طراحی ریسپانسیو",iconSrc: "./images/ourServices/cadrIcon.svg"},
+        {title: "سرعت بالا در لودینگ", iconSrc: "./images/ourServices/speedIcon.svg"},
+        {title:"کدنویسی تمیز و بهینه" ,iconSrc:"./images/ourServices/codeIcon.svg"},
+        {title:"جذب مشتری بالقوه", iconSrc:"./images/ourServices/customerIcon.svg"},
+        {title: "افزایش نرخ تبدیل", iconSrc: "./images/ourServices/arrowIcon.svg"}
     ]
     const cartData = [
         {planName: "ساده", price: "99", yearlyPrice: "1 میلیون ", liValue: "اول", style: "normal"},
@@ -24,7 +24,7 @@ function Main() {
         {planName: "نامحدود",  price: "399",  yearlyPrice: "4 میلیون ",  style: "normal"}
     ]
     return(
-    <main>
+        <main>
         <Companies></Companies>
         <div className='body-wrapper'>
             <BodyItem {...bodyItemDta[0]}></BodyItem>
@@ -50,7 +50,7 @@ function Main() {
                 <Cart {...cartData[2]}></Cart>
             </div>
         </section>
-    </main>
+        </main>
     )
 }
 export default Main

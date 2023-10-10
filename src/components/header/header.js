@@ -15,7 +15,7 @@ export default function Header(){
                     </div>
                 </div>
                 <div className='header-img-wrapper'>
-                    <img className='header-img' src="./iphone-mockup-standing.png" alt="mobile" />
+                    <img className='header-img' src="./images/header/iphone-mockup-standing.png" alt="mobile" />
                 </div>
                 <div className='header-svg-wrapper'>
                     <div className='bg-light'></div>

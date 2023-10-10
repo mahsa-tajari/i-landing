@@ -3,8 +3,8 @@ export default function Nav(){
     return(
         <nav>
             <div className="wrapper">
-                <div className='logo-wrapper'><img src="./main-logo.svg" alt="i-landing logo" /></div>
-                <div className='typography-wrapper'><img src="./ilanding-typography.svg" alt="i-landing typography" /></div>
+                <div className='logo-wrapper'><img src="././images/nav/main-logo.svg" alt="i-landing logo" /></div>
+                <div className='typography-wrapper'><img src="./images/nav/ilanding-typography.svg" alt="i-landing typography" /></div>
             </div>
             <div className='menu-icon-wrapper'>
                 <span className='menu-icon-line'></span>
