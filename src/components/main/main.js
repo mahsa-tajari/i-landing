@@ -4,6 +4,7 @@ import BodyItem from '../bodyItem/bodyItem'
 import ServicesBox from '../servicesBox/servicesBox'
 import Title from '../title/title'
 import Cart from '../cart/cart'
+import Questions from '../questions/questions'
 function Main() {
     const bodyItemDta = [
         {shortTitle: 'طراحی Mobile-first',imgSrc: './images/main/picture1.svg', direction: 'right', theme: 'default',title: 'ریسپانسیو برای تمامی دستگاه ها'},
@@ -50,6 +51,7 @@ function Main() {
                 <Cart {...cartData[2]}></Cart>
             </div>
         </section>
+        <Questions></Questions>
         </main>
     )
 }
