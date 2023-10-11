@@ -5,6 +5,8 @@ import ServicesBox from '../servicesBox/servicesBox'
 import Title from '../title/title'
 import Cart from '../cart/cart'
 import Questions from '../questions/questions'
+import Achievements from '../achievements/achievements'
+import Comments from '../comments/comments'
 function Main() {
     const bodyItemDta = [
         {shortTitle: 'طراحی Mobile-first',imgSrc: './images/main/picture1.svg', direction: 'right', theme: 'default',title: 'ریسپانسیو برای تمامی دستگاه ها'},
@@ -52,6 +54,8 @@ function Main() {
             </div>
         </section>
         <Questions></Questions>
+        <Achievements></Achievements>
+        <Comments></Comments>
         </main>
     )
 }
