@@ -1,0 +1,34 @@
+.Achieve-wrapper{
+    padding:5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9fafb;
+    gap: 1rem;
+}
+.Achieve-item-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.achieve-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #334155;
+}
+.achieve-item span{
+    color: #0166fd;
+    font-family: 'vazir-bold';
+    font-size: 1.75rem;
+}
+.achieve-item p {
+    white-space: nowrap;
+}
+@media (min-width:640px){
+    .Achieve-item-wrapper{
+        grid-template-columns: repeat(4,20%);
+        column-gap: 3rem;
+    }
+}
