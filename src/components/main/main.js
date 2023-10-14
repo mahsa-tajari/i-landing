@@ -9,6 +9,7 @@ import Achievements from '../achievements/achievements'
 import Comments from '../comments/comments'
 import AboutUs from '../about-us/aboutUs'
 import Portfollio from '../portfolio/portfolio'
+import Buy from '../buy/buy'
 function Main() {
     const bodyItemDta = [
         {shortTitle: 'طراحی Mobile-first',imgSrc: './images/main/picture1.svg', direction: 'right', theme: 'default',title: 'ریسپانسیو برای تمامی دستگاه ها'},
@@ -60,6 +61,7 @@ function Main() {
         <Comments></Comments>
         <AboutUs></AboutUs>
         <Portfollio></Portfollio>
+        <Buy></Buy>
         </main>
     )
 }

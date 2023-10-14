@@ -1,0 +1,42 @@
+.buy{
+    background-color: #eff6ff;
+    padding: 1rem 2rem;
+    color: #1e293b;
+    font-size: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: 0 0 #0000, 0 0 #0000 ,0 0 #0000, 0 0 #0000,0 1px 3px 0 #0000001a, 0 1px 2px -1px #0000001a;
+}
+.buy a{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .75rem ;
+    border-radius: 2rem;
+    font-size: 1rem;
+    font-family: 'vazir-bold';
+}
+@media (min-width:640px){
+    .buy {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .buy a{
+        width: 10rem;
+    }
+}
+@media (min-width:768px){
+    .buy {
+        flex-direction: row;
+        justify-content: center;
+        column-gap: 5rem;
+    }
+}
+@media (min-width:1024px){
+    .buy {
+        column-gap: 15rem;
+    }
+}
