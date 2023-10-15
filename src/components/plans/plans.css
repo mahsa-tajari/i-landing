@@ -1,0 +1,25 @@
+.plans{
+    background-color: #f9fafb;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    padding: 5rem;
+}
+.plans-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+}
+/* responsive */
+@media (min-width: 768px){
+    .plans-wrapper{
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+    }
+    #active{
+        margin-top: -2rem;
+    }
+}
