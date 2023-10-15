@@ -1,0 +1,9 @@
+.contact-info{
+    display: flex;
+    align-items: center;
+    column-gap: .5rem;
+}
+.contact-info--icon{
+    font-size: 1.25rem;
+    font-weight: 600;
+}

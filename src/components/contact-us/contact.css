@@ -1,0 +1,116 @@
+.contact-us{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contact-us--wrapper{
+    padding: 1rem 1rem 0rem 1rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+.contact-us--contact-info{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: #f9fafb;
+    border-radius: 1.5rem;
+    row-gap: 3rem;
+    color: #334155;
+    font-size: .875rem;
+    box-shadow: 0 0 #0000, 0 0 #0000,0 0 #0000, 0 0 #0000,0 1px 3px 0 #0000001a, 0 1px 2px -1px #0000001a;
+}
+.contact-us--contact-info h3{
+    color: #1e293b;
+}
+.contact-us--contact-ways{
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
+}
+.contact-infos-wrapper{
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
+}
+
+.contact-us-form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+.form-input-wrapper{
+    display: flex;
+    flex-direction: column;
+    font-size: .75rem;
+    row-gap: .5rem;
+    position: relative;
+}
+.form-input{
+    outline-color: #0166FD;
+    padding: .75rem .5rem;
+    font-family: 'vazir';
+    border:1px solid #cbd5e1;
+    border-radius: .875rem;
+    box-shadow: 0 0 #0000, 0 0 #0000,0 0 #0000, 0 0 #0000,0 1px 2px 0 #0000000d;
+}
+.form-input-wrapper span{
+    position: relative;
+    display: block;
+}
+.form-input-wrapper:first-child span::after,
+.form-input-wrapper:nth-child(2) span::after,
+    .form-input-wrapper:nth-child(4) span::after{
+    content: "*";
+    position: absolute;
+    top:-.1rem;
+    color: #dc2626;
+    font-size: 1rem;
+}
+.contact-us--form-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem;
+    border-radius: 1rem;
+}
+@media (min-width:768px){
+    .contact-us--wrapper{
+        flex-direction: row;
+        justify-content: center;
+        column-gap: 2rem;
+    }
+    .contact-us--contact-info{
+        width: 50%;
+        justify-content: space-between;
+    }
+    .contact-us-form{
+        width: 50%;
+    }
+}
+@media (min-width:1024px){
+    .contact-us-form{
+        width: 95%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: .5rem;
+    }
+    .form-input-wrapper:nth-child(2),
+    .form-input-wrapper:nth-child(3)
+    {
+        width: 49%;
+    }
+    .form-input-wrapper,
+    .contact-us--form-btn{
+        width: 100%;
+    }
+}
+@media (min-width:1024px){
+    .contact-us--wrapper{
+        padding: 5rem 10rem;
+    }
+    .contact-us--content{
+        max-width: 90rem;
+    }
+}
