@@ -14,29 +14,6 @@ main{
     width: 100%;
     align-items: center;
 }
-.our-services{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    row-gap: 1rem;
-    padding: 0 .75rem 5rem .75rem;
-}
-.services-boxes-wrapper{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    row-gap: 1rem;
-}
-.our-services-title{
-    text-align: center;
-    color: #1e293b;
-}
-.our-services-desc{
-    text-align: center;
-    color: #334155;
-}
 .plans{
     background-color: #f9fafb;
     display: flex;
@@ -51,18 +28,7 @@ main{
     row-gap: 1rem;
 }
 /* responsive */
-@media (min-width: 640px){
-    .services-boxes-wrapper{
-        display: grid;
-        grid-template-columns:1fr 1fr;
-        column-gap: 4rem;
-        padding: 0 1rem;
-    }
-}
 @media (min-width: 768px){
-    main{
-        row-gap: 10rem;
-    }
     .plans-wrapper{
         flex-direction: row-reverse;
         flex-wrap: wrap;
