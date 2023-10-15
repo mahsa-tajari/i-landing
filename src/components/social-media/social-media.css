@@ -1,0 +1,11 @@
+.contact-us--social-media-wrapper{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.contact-us--social-media{
+    font-size: 1.4rem;
+    color: rgb(51, 65, 85);
+    stroke-width: 2.5;
+    cursor: pointer;
+}
