@@ -3,15 +3,4 @@ main{
     flex-direction: column;
     row-gap: 5rem;
 }
-.body-wrapper{
-    display: flex;
-    flex-direction: column;
-    row-gap: 4rem;
-}
-.title-wrapper{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-}
 
